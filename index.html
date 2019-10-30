@@ -18,6 +18,7 @@
       height: 300px;
       background-color: purple;
     }
+    
   </style>
   <body>
     <p id = "paragraph">
@@ -140,6 +141,87 @@
     
     <button onclick = "extremeRandomButtons()"> WHAT DO I DO </button>
 
+    <style>
+#myDiv {
+  border: 3px solid red;
+  outline: 3px solid blue;
+}
+  #padding {
+  border: 1px solid #FF0000;
+}
+  #text {
+  text-decoration: underline;
+}
+</style>
+    <script>
+  
+function myFunction1() {
+  document.body.style.backgroundColor = "lightpink";
+}
+function myFunction2() {
+  document.getElementById("color").style.color = "red";
+}
+  
+  function myFunction3() {
+  document.getElementById("myP").style.float = "right";
+}
+      function myFunction4() {
+  document.getElementById("myDiv").style.outline = "5px dotted green";
+}
+      function myFunction5() {
+  document.getElementById("padding").style.padding = "50px 10px 20px 30px";
+}
+      function myFunction6() {
+  document.getElementById("text").style.textDecorationColor = "red";
+}
+      function myFunction7() {
+  document.getElementById("space").style.letterSpacing = "15px";
+}
+      function myFunction8() {
+  document.getElementById("myBtn").style.height = "50px";
+}
+    </script>
+    
+    
+    <button onclick="alert('Welcome')">Click me</button><br>
+     <h1 id="change" style="display:none">The weired Game of buttons.</h1>
+    
+<button type="button" onclick="document.getElementById('change').style.display='block'">Press Me!</button><br>
+    
+    <button type="button" onclick="myFunction1()">Set background color</button><br>
+      
+   <p id="demo">Click the button that hides me</p>
+<button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button><br>
+
+
+
+    <button type="button"
+onclick="document.getElementById('time').innerHTML = Date()">
+Click me to display Date and Time.</button><br>
+    <p id="time"></p>
+  
+  <p id="color">Can you change my color to red?</p>
+    <button type="button" onclick="myFunction2()">Click me to change my text color.</button><br>
+
+    
+<p id="myP"> Stare at this text.</p>
+<button type="button" onclick="myFunction3()">Let text flow from right to left</button><br>
+
+    
+   <div id="myDiv">This can change a border pattern.</div><br>
+
+<button type="button" onclick="myFunction4()">Change outline</button>
+ 
+<div id="padding">This can make a space between the text and the border.</div><br>
+<button type="button" onclick="myFunction5()">Set padding</button>
+
+<p id="text">Hello world!</p>
+<button onclick="myFunction6()">Try it</button><br>
+    
+    <p id="space">This is button can create a space between the text.</p>
+<button type="button" onclick="myFunction7()">Set letter spacing</button><br>
+
+    <button type="button" id="myBtn" onclick="myFunction8()">Change the height of this button</button><br>
     
   </body>
 </html>
