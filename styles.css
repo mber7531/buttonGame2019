@@ -2,22 +2,52 @@
 
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 10px;
-  background:#ffffff;
-  color:#000000;
+  background: black;
+  margin: 2em;
 }
 
 h1 {
   font-style: italic;
   color: #373fff;
 }
-img#spidey {
-  width:400px;
-}
-div.pictureFrame {
-  background:black;
+
+P#paragraph{
+  color: purple;
+  font-size: 70px;
   text-align:center;
-  padding:15px;
-  border-radius:25px;
-  width:400px
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+p#quote{
+  color: red;
+  font-size: 70px;
+  text-align: center;
+}
+
+p{
+  color:white;
+  opacity: 1;
+  text-align:center;
+}
+
+img{
+  display: block;
+  margin:auto;
+}
+
+button{
+  color: red;
+  position: absolute;
+  transform: rotateY(0deg);
+  transform: skewX(0deg);
+  font-size: 10px;
+  transition: color 2s, font-size 2s, transform 2s, top 2s, right 2s, opacity 2s;
+  
+}
+button:hover{
+  font-size: 50px;
+  transform: rotateY(150deg);
+  transform: skewX(20deg);
+  color: blue;
 }
