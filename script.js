@@ -17,7 +17,7 @@ var counter = 360;
 
 function randomRotate(){
   var list = document.getElementsByTagName("BUTTON");
-  for(var i = 0; i < 12; i++){ 
+  for(var i = 0; i < list.length; i++){ 
     list[i].style.transform = 'rotate('+counter + 'deg)';
   }  
   counter += 360;
@@ -41,7 +41,7 @@ function loseScore(){
 var opacityCounter = .5
 function disapearButtons(){
   var list = document.getElementsByTagName("BUTTON");
-  for(var i = 0; i < 12; i++){ 
+  for(var i = 0; i < list.length; i++){ 
     list[i].style.opacity = opacityCounter;
     
   }
@@ -56,7 +56,7 @@ function disapearButtons(){
 }
 function reapear(){
   var list = document.getElementsByTagName("BUTTON");
-  for(var i = 0; i < 12; i++){ 
+  for(var i = 0; i < list.length; i++){ 
     list[i].style.opacity = 1;
   }
 }
