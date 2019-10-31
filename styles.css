@@ -36,7 +36,7 @@ img{
   margin:auto;
 }
 
-button.weird{
+.weird{
   color: red;
   position: absolute;
   transform: rotateY(0deg);
@@ -45,7 +45,7 @@ button.weird{
   transition: color 2s, font-size 2s, transform 2s, top 2s, right 2s, opacity 2s;
   
 }
-button.weird:hover{
+.weird:hover{
   font-size: 50px;
   transform: rotateY(150deg);
   transform: skewX(20deg);
