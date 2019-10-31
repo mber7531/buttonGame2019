@@ -62,8 +62,12 @@ function reapear(){
 }
 function extremeRandomButtons(){
   var list = document.getElementsByTagName("BUTTON");
-  for(var i = 0; i < 12; i++){ 
-    list[i].style.opacity = 0;
+  for(var i = 0; i < list.length; i++){ 
+    if(i%2==0){
+      list[i].className += "weird";
+      list[i].style.opacity = 0;
+    }
+    
   }
   setTimeout(randomPosition, 3000);
   setTimeout(reapear, 5000)
