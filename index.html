@@ -223,5 +223,41 @@ Click me to display Date and Time.</button><br>
 
     <button type="button" id="myBtn" onclick="myFunction8()">Change the height of this button</button><br>
     
+    <h1 id="myheading1">
+      Find the Button that makes the crayon disappear!
+    </h1>
+    <button id="buttoncolor" onclick="document.body.style='background-color:red;'">1</button>
+    <button onclick="document.getElementById('hiddenbutton').style.opacity=0;">2</button>
+    <button id="hiddenbutton" onclick="document.body.style='background-color:blue;'">3</button>
+    <button onclick="document.getElementById('hiddenimage').style.opacity=0;">4</button>
+    <button onclick="document.getElementById('hiddenbutton').style.opacity=1;">5</button>
+    <button onclick="alert('oh, hey there!')">6</button>
+    <button onclick="document.getElementById('myheading1').innerHTML='did you find it yet?'">7</button>
+    <button onclick="hiddenimage()">8</button>
+    <button onclick="headingcolor()">9</button>
+    <button onclick="paragraphcolor()">10</button>
+    <button onclick="buttoncolors()">11</button>
+    <button id="buttoncolor2" onclick="buttoncolor2()">12</button> 
+    <p id="hiddenparagraph" > </p>
+    <br>
+    <br>   
+    <img id="hiddenimage" src="https://cdn.glitch.com/bda5dd07-737d-430b-92a1-b62412ecbfba%2Fcrayon-7GOXmy4-600.jpg?v=1572350589052" width="300">
+   <script>
+    function hiddenimage(){
+  document.getElementById('hiddenparagraph').innerHTML = "hello";
+}
+function headingcolor() {
+   document.getElementById("myheading1").style.color = "#ff0000";
+}
+function paragraphcolor() {
+   document.getElementById("hiddenparagraph").style.color = "#fff000";
+}
+function buttoncolors() {
+  document.getElementById('buttoncolor').style.color = "#00ff00";
+}
+function buttoncolor2() {
+  document.getElementById('buttoncolor2').style.color = "#ffff00";
+}
+    </script>
   </body>
 </html>
