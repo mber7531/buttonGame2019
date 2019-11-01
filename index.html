@@ -19,6 +19,25 @@
       background-color: purple;
     }
     
+    
+     p#rick{
+        display:none;
+      }
+      
+      
+      img#squidward{
+        display:none;
+      }
+      
+      img#shrek{
+        display:none;
+      }
+      
+      button:hover{
+        size:200;
+        color:yellow;
+      }
+    
   </style>
   <body>
     
@@ -53,6 +72,27 @@
     <button type="button" onclick="changeColor()">
       Click the Button to Change the Background
     </button>
+    
+    <h1 id="heading">Can you find the button to make the background color blue?</h1>
+    <p id = "rick">Rick and Morty is an American adult animated science fiction sitcom created by Justin Roiland and Dan Harmon for Cartoon Network's late-night programming block Adult Swim. The series follows the misadventures of cynical mad scientist Rick Sanchez and his good-hearted but fretful grandson Morty Smith, who split their time between domestic life and interdimensional adventures.</p>
+    <img id = "squidward" src="https://imgix.ranker.com/user_node_img/50057/1001120402/original/missed-spongebob-when-he-moved-away-photo-u1?w=650&q=50&fm=pjpg&fit=crop&crop=faces">
+    <img id = "shrek" src="http://giphygifs.s3.amazonaws.com/media/hG8MN8J6oXJO8/giphy.gif">
+    <p id = "showClicks"></p>
+    <img id = "squiddy" src = "https://img.buzzfeed.com/buzzfeed-static/static/2017-10/19/13/asset/buzzfeed-prod-fastlane-01/sub-buzz-13874-1508435037-3.jpg?downsize=700:*&output-format=auto&output-quality=auto">
+    
+    
+    <button onclick = "showText()">?</button>
+    <button onclick = "showIMG()">?</button>
+    <button onclick = "addClicks()">?</button>
+    <button onclick = "document.body.style.backgroundColor = 'green';">?</button>
+    <button onclick = "showGif()">?</button>
+    <button onclick = "document.body.style.backgroundColor = 'blue';">?</button>
+    <button onclick = "changeHeadingColor()">?</button>
+    <button onclick = "lowerHeadingSize()">?</button>
+    <button onclick = "document.body.style.backgroundColor = 'hotpink';">?</button>
+    <button onclick = "higherHeadingSize()">?</button>
+    <button onclick = "document.body.style.backgroundColor = 'purple';">?</button>
+    <button onclick = "flipSquiddy()">?</button>
 
     <script>
       function changeColor() {
@@ -78,6 +118,43 @@
     function field() {
     document.getElementById("field2").value = document.getElementById("field1").value;
     }
+      
+     let clicks = 0;
+      
+      function showText(){
+        document.getElementById("rick").style.display = "block";
+      }
+      
+      function showIMG(){
+        document.getElementById("squidward").style.display = "block";
+      }
+      
+      function addClicks(){
+        clicks = clicks + 1;
+        document.getElementById("showClicks").innerHTML = (clicks);
+      }
+      
+      function showGif(){
+        document.getElementById("shrek").style.display = "block";
+        document.getElementById("shrek").style.size = 100;
+      }
+      
+     function changeHeadingColor(){
+       document.getElementById("heading").style.color = "red";
+
+     }
+     function lowerHeadingSize(){
+       document.getElementById("heading").style.fontSize = 10;
+     } 
+      
+     function higherHeadingSize(){
+       document.getElementById("heading").style.fontSize = 75;
+     }  
+      
+     function flipSquiddy(){
+       var squid=document.getElementById("squiddy");
+	     squid.setAttribute('style','transform:rotate(180deg)')
+     }  
     </script>
     
 
