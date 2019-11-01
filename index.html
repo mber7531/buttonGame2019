@@ -262,7 +262,60 @@ Click me to display Date and Time.</button><br>
     <br>
     <br>   
     <img id="hiddenimage" src="https://cdn.glitch.com/bda5dd07-737d-430b-92a1-b62412ecbfba%2Fcrayon-7GOXmy4-600.jpg?v=1572350589052" width="300">
-   <script>
+   <h1 id="h1">
+      Goal; find the Button that changes the background to pink
+    </h1>
+    <h2 id="h2">
+      This is the hidden heading
+    </h2>
+    <p id="p">
+      This is a paragraph
+    </p>
+    <img
+      src="https://cdn.glitch.com/d2376b3b-5f49-4635-8216-548bf149e584%2Fsmiley-face.png?v=1572351157564"
+      width="100"
+      alt="Smiley face"
+    /><br />
+    <!--1-4 will be background color -->
+    <button onclick="backgroundLightBlue()">
+      1
+    </button>
+    <button onclick="backgroundLightPink()">
+      2
+    </button>
+    <button onclick="backgroundGreen()">
+      3
+    </button>
+    <button onclick="backgroundWhite()">
+      4
+    </button>
+    <!--5-8 will be text color -->
+    <button onclick="paragraphHappy()">
+      5
+    </button>
+    <button onclick="paragraphSad()">
+      6
+    </button>
+    <button onclick="headingAngry()">
+      7
+    </button>
+    <button onclick="headingHungry()">
+      8
+    </button>
+    <!-- 9-12 will be desplaying elements -->
+    <button onclick="hideParagraph()">
+      9
+    </button>
+    <button onclick="showParagraph()">
+      10
+    </button>
+    <button onclick="hideHeading2()">
+      11
+    </button>
+    <button onclick="showHeading2()">
+      12
+    </button>
+    <script>
     function hiddenimage(){
   document.getElementById('hiddenparagraph').innerHTML = "hello";
 }
@@ -278,6 +331,43 @@ function buttoncolors() {
 function buttoncolor2() {
   document.getElementById('buttoncolor2').style.color = "#ffff00";
 }
+      function backgroundLightBlue(){
+  document.body.style.backgroundColor = "LightBlue";
+}
+function backgroundLightPink(){
+  document.body.style.backgroundColor = "LightPink";
+}
+function backgroundGreen(){
+  document.body.style.backgroundColor = "Green";
+  }
+function backgroundWhite(){
+  document.body.style.backgroundColor = "White";
+}
+function paragraphHappy(){
+   document.getElementById("p").innerHTML = "This is exciting";
+}
+function paragraphSad(){
+  document.getElementById("p").innerHTML = "We may not find it";
+}
+function headingAngry(){
+    document.getElementById("h1").innerHTML = "This is rigged isnt it";
+}
+function headingHungry(){
+  document.getElementById("h1").innerHTML = "I'm hungry now";
+}
+function hideParagraph(){
+  document.getElementById("p").style.display = "none";
+}
+function showParagraph(){
+  document.getElementById("p").style.display = "block";
+}
+function hideHeading2(){
+  document.getElementById("h2").style.display = "none";
+}
+function showHeading2(){
+  document.getElementById("h2").style.display = "block";
+}
+
     </script>
   </body>
 </html>
