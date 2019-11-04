@@ -122,6 +122,51 @@ function hide(){
   document.getElementById('h2').style.display="none";
 }
 
+function showText(){
+  document.getElementById("hide").style.visibility = "visible";
+  
+}
+
+function changeBack(){
+  document.body.style.backgroundColor = "blue";
+}
+
+function changePos(){
+  document.getElementById("changePos").style.transform = "translate(1000px,500px)";
+}
+
+function rotate(){
+  document.getElementById("rotate").style.transform = "rotate(125deg)";
+}
+
+function disappearButton(){
+  document.getElementById("disappear").style.visibility = "hidden";
+}
+
+function showImage(){
+  document.getElementById("ricardo").style.visibility = "visible";
+}
+
+function makeButton(){
+  document.getElementById("hiddenButton").style.visibility = "visible";
+}
+function makeBorder(){
+  document.getElementById("border").style.border = "solid 3px red";
+}
+function changeXPos(){
+  document.getElementById("hiddenButton").style.transform = "translate(2000px)";
+}
+function changeSize(){
+  document.getElementById("changeSize").style.transform = "scale(0.2,0.2)";
+}
+function changeWidth(){
+  document.getElementById("changeWidth").style.width = "300px";
+}
+function color(){
+  document.getElementById("color").style.backgroundColor = "green";
+}
+
+
 
 randomPosition()
 
